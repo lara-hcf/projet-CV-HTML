@@ -3,22 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Mon CV</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section>
+        <section id="info_perso" class="coller">
             <h2>Information personelles</h2>
             <p>Lara</p>
             <p>Ho Chouck Foune</p>
             <p>123 avenue de la republiquee, 75001 Paris</p>
             <p>01 23 45 67 89</p>
         </section>
-        <hr>
-        <section>
+        <section id="objectif_perso" class="coller">
             <h2>Objectif personnel</h2>
-            <p>Chaque jour, je m'engage a cultiver la gratitude et a semer des graines de positivite dans mon environnement. 
+            <p><i>Chaque jour, je m'engage a cultiver la gratitude et a semer des graines de positivite dans mon environnement. 
                 Je nourris mon esprit avec la lecture de livres inspirants et je m'efforce de developper mes competences 
                 chaque jour. En suivant cette voie, je m'epanouis dans ma quete constante d'amelioration personnelle et de 
-                realisation de soi. - chat Gpt 3.5</p>
+                realisation de soi.</i> - chat Gpt 3.5
+            </p>
         </section>
         <hr>
         <section>
@@ -43,28 +47,45 @@
             </ul>
         </section>
         <hr>
-        <section>
-            <h3>Competences</h3>
+        <section id="skill" class="coller">
+            <h2>Competences</h2>
             <ul>
                 <li><p>Java</p></li>
                 <li><p>Python</p></li>
                 <li><p>HTML, CSS, Javascript</p></li>
             </ul>
         </section>
-        <section>
+        <section id="loisir" class="coller">
             <h2>Loisir</h2>
             <h3>Jeux video</h3>
             <ul>
                 <li><p>Tears of themis 
-                    <img src="tot.jpg" alt="Tear of Themis logo" height="50px" width="50px">
+                    <img src="tot.jpg" alt="Tear of Themis logo" >
                 </p></li>
                 <li><p>Honkai Star rail 
-                    <img src="HSR.jpg" alt="Honkai Star Rail logo" height="50px" width="50px">
+                    <img src="HSR.jpg" alt="Honkai Star Rail logo" >
                 </p></li>
                 <li><p>Final Fantasy 14 Online
-                    <img src="FFO.png" alt="Final Fantasy 14 logo" height="50px" width="50px">
+                    <img src="FFO.png" alt="Final Fantasy 14 logo" >
                 </p></li>
             </ul>
         </section>
+        <hr>
+        <div id="formulaire">
+            <form>
+                <h2>Formulaire de contact</h2>
+                <label for="fname">Prenom</label> <br>
+                <input type="text" id="fname" name="fname"> <br>
+                <label for="lname">Nom</label> <br>
+                <input type="text" id="lname" name="lname"> <br>
+                <label for="ton_mail">Adresse e-mail</label> <br>
+                <input type="email" id="ton_mail" name="ton_mail"> <br>
+                <label for="message">Message</label> <br>
+                <textarea id="message" name="message" rows="5" cols="5"></textarea>
+                <br>
+                <input type="submit" value="Envoyer" id="envoyer">
+            </form>
+        </div>
+        
     </body>
 </html>
